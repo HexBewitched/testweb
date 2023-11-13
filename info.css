@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    animation: transitionIn 1s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes transitionText{
+    from {
+        opacity: 0;
+        transform: translateY(50px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+#navBar{
+    width: 1300px;
+    background-color: #BCB6B1;
+    height: 120px;
+}
+
+#logo{
+    background-color: #BCB6B1;
+    width: 120px;
+    height: 120px;
+    float: right;
+    padding-right: 120px;
+}
+
+#title{
+    background-color: white;
+    height: 800px;
+    width: 1350px;
+}
+
+#titletext{
+    animation: transitionText 1.5s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    background-color: #BCB6B1;
+    padding: 1rem;
+    transition: background 0.5s;
+    display: block;
+    outline: 0;
+    width: 240px;
+    height: 120px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+  
+nav a:hover,
+nav li:focus-within > a {
+    background: #978e85;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    min-width: max-content;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 2s;
+}
+  
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    max-height: 2000px;
+}
+
+@media screen and (min-width: 1000px) {
+    
+    nav > ul > li {
+    float: left;
+    }
+    
+    .dropdown {
+        position: relative;
+    }
+    
+    .dropdown-content {
+        position: absolute;  
+        width: max-content;
+    }
+    
+    .content {
+        clear: both;
+    }
+    
+}
+
+#youtube{
+	height: 100px;
+	width: 147px;
+	float: left;
+	background-image: url("tube.png");
+	background-size: cover;
+	margin-left: 150px;
+	transition: transform .5s;
+}
+
+#instagram{
+	height: 100px;
+	width: 100px;
+	float: left;
+	background-image: url("gram.webp");
+	background-size: cover;
+	margin-left: 200px;
+	transition: transform .5s;
+}
+
+#twitter{
+	height: 105px;
+	width: 105px;
+	float: left;
+	background-image: url("twit.png");
+	background-size: cover;
+	margin-left: 200px;
+	transition: transform .5s;
+    
+}
+
+#tiktok{
+	height: 105px;
+	width: 105px;
+	float: left;
+	background-image: url("tiktok.svg");
+	background-size: cover;
+	margin-left: 200px;
+	transition: transform .5s;
+}
+
+#footer{
+    padding-top: 30px;
+    width: 1349px;
+    height: 150px;
+    background-color: #BCB6B1;
+}
+
+#youtube:hover {
+	transform: scale(1.1);
+}
+
+#instagram:hover {
+	transform: scale(1.1);
+}
+
+#twitter:hover {
+	transform: scale(1.1);
+}
+
+#tiktok:hover {
+	transform: scale(1.1);
+}
+
+#peepyinfo{
+    height: 800px;
+    width: 1349px;
+}
+
+.img{
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .5s;
+}
+
+.img:hover {
+	transform: scale(1.03);
+}
+
+.gold{
+    border-radius: 25%;
+}
+
+.slider1{
+	width:400px;
+    height:400px;
+	background: url("beach1.jpg");
+	animation: slides1 10s linear infinite;
+    float: left;
+}
+
+@keyframes slides1{
+	
+	0% {
+		background: url("ouioui1_400x400.webp");
+	}
+	100% {
+		background: url("peepylist1_400x400.webp");
+	}
+}
+
+.slider2{
+	width:400px;
+    height:400px;
+	background: url("beach1.jpg");
+	animation: slides2 10s linear infinite;
+    float: right;
+}
+
+@keyframes slides2{
+	
+	0% {
+		background: url("ouioui2_400x400.webp");
+	}
+	100% {
+		background: url("peepylist2_400x400.webp");
+	}
+}
